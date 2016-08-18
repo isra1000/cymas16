@@ -15,10 +15,11 @@ import org.junit.Rule;
  */
 public class TestCustomRule {
     @Rule
-    public CustomRule r = new CustomRule();
+    public TimeTestRule r = new TimeTestRule();
     @Test
     public void casodeprueba1()
     {
+        for(int i=0; i<100000; i++){}
         assertEquals("son iguales", 5, 5);
     }
     @Test

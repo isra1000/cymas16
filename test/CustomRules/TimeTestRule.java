@@ -26,7 +26,7 @@ public class TimeTestRule {
     @After
     public void end() {
       
-        System.out.println(System.currentTimeMillis() - start);
+        System.out.println( System.currentTimeMillis() - start);
     }
     @Test
     public void casodeprueba1()
